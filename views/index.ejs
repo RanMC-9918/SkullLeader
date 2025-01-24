@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skull Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Skull Board :skull:</h1>
+    <ul class="wall">
+      <% for(let i = 0; i < messages.length; i++) { %>
+      <li>
+        <div class="card">
+          <div class="icon"></div>
+          <div class="text">
+            <h2 class="author"><%= messages[i].author %></h2>
+            <p class="content"><%= messages[i].content %></p>
+          </div>
+        </div>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
